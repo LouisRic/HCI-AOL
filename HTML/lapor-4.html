@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyID: Lapor</title>
+    <link rel="icon" type="image/x-icon" href="../asset_cyberid/Lambang_Polri.png">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/lapor-4.css">
+</head>
+<body id="lapor-4">
+    <nav>
+        <div class="logpict">
+            <img src="../asset_cyberid/Lambang_Polri.png" alt="">
+            <a href="home.html" id="logo">CYBER INDONESIA</a>
+        </div>
+        <div class="mobile-nav">
+            <div id="ham-menu" onclick="clickmobile(this)">
+                <div class="b1"></div>
+                <div class="b2"></div>
+                <div class="b3"></div>
+                
+                <ul class="for-mob">
+                    <li><a href="lapor-1.html">Lapor</a></li>
+                    <li><a href="berita.html">Berita</a></li>
+                    <li><a href="tentangkami.html">Tentang Kami</a></li>
+                    <li><a href="panduan.html">Panduan</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <ul class="pc-navbar">
+            <li><a href="lapor-1.html" class="thispage">Lapor</a></li>
+            <li><a href="berita.html">Berita</a></li>
+            <li><a href="tentangkami.html">Tentang Kami</a></li>
+            <li><a href="panduan.html">Panduan</a></li>
+        </ul>
+    </nav>
+    <div class="form">
+        <div class="form-container">
+            <h1>Mohon Unggah Kelengkapan Data Berikut</h1>
+            <form>
+                <div class="form-group">
+                    <label for="ktp">Foto KTP <span>*</span></label>
+                    <button class="upload-button" type="button">Unggah Gambar</button>
+                </div>
+                <div class="form-group">
+                    <label for="bukti">Bukti Kejadian <span>*</span></label>
+                    <button class="upload-button" type="button">Unggah Gambar</button>
+                </div>
+                <div class="confirmation-group">
+                    <input type="checkbox" id="terms" name="terms">
+                    <label for="terms">Saya mengerti & menerima syarat dan ketentuan yang berlaku</label>
+                </div>
+                <p class="log" id="error"></p>
+                <button type="submit" id= "submit" class="submit-button">Lapor</button>
+                <div class="navigation">
+                    <button type="button" onclick="window.location.href='nextpage2.html'" class="nav-button prev-button">&#10094;</button>
+                    <span>4 dari 4</span>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="laporModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Laporan Berhasil!</h2>
+            <p>Laporan anda akan segera diproses,<br>Anda dapat melihat status perkembangan laporan anda pada email yang terdaftar</p>
+            <button id="kembaliButton" class="modal-button">Kembali</button>
+        </div>
+    </div>
+    <script src="../JavaScript/laporval4.js"></script>
+    <!-- <script src="../jquery-3.7.1.min.js"></script>
+    <script src="../JavaScript/lapor.js"></script> -->
+</body>
+</html>

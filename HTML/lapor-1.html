@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyID: Lapor</title>
+    <link rel="icon" type="image/x-icon" href="../asset_cyberid/Lambang_Polri.png">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/lapor-1.css">
+    <script defer src="../JavaScript/mobile.js"></script>
+   
+</head>
+<body id="lapor-1">
+    <nav>
+        <div class="logpict">
+            <img src="../asset_cyberid/Lambang_Polri.png" alt="">
+            <a href="home.html" id="logo">CYBER INDONESIA</a>
+        </div>
+        <div class="mobile-nav">
+            <div id="ham-menu" onclick="clickmobile(this)">
+                <div class="b1"></div>
+                <div class="b2"></div>
+                <div class="b3"></div>
+                
+                <ul class="for-mob">
+                    <li><a href="lapor-1.html">Lapor</a></li>
+                    <li><a href="berita.html">Berita</a></li>
+                    <li><a href="tentangkami.html">Tentang Kami</a></li>
+                    <li><a href="panduan.html">Panduan</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <ul class="pc-navbar">
+            <li><a href="lapor-1.html" class="thispage">Lapor</a></li>
+            <li><a href="berita.html">Berita</a></li>
+            <li><a href="tentangkami.html">Tentang Kami</a></li>
+            <li><a href="panduan.html">Panduan</a></li>
+        </ul>
+    </nav>
+    <div class="form">
+        <div class="form-container">
+            <h1>Kejahatan apa yang sedang dihadapi?</h1>
+            <div class="select-box">
+                <select id="form">
+                    <option value="" disabled selected>Pilih</option>
+                    <option value="Perundungan">Perundungan</option>
+                    <option value="Penipuan">Penipuan</option>
+                    <option value="Doxing">Doxing</option>
+                    <option value="Pencemaran Nama Baik">Pencemaran Nama Baik</option>
+                    <option value="Revenge Porn">Revenge Porn</option>
+                </select>
+                <p class="log" id="error"></p>
+            </div>
+            <div class="navigation">
+                <span>1 dari 4</span>
+                <button type="button" class="nav-button next-button">&#10095;</button>
+            </div>
+        </div>
+    </div>
+    <script src="../JavaScript/laporval1.js"></script>
+   <script src="../jquery-3.7.1.min.js"></script>
+    <!-- <script src="../JavaScript/lapor.js"></script> -->
+</body>
+</html>
