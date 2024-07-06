@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyID: Lapor</title>
+    <link rel="icon" type="image/x-icon" href="../asset_cyberid/Lambang_Polri.png">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="stylesheet" href="../CSS/lapor-2.css">
+</head>
+<body id="lapor-2">
+    <nav>
+        <div class="logpict">
+            <img src="../asset_cyberid/Lambang_Polri.png" alt="">
+            <a href="../index.html" id="logo">CYBER INDONESIA</a>
+        </div>
+        <div class="mobile-nav">
+            <div id="ham-menu" onclick="clickmobile(this)">
+                <div class="b1"></div>
+                <div class="b2"></div>
+                <div class="b3"></div>
+                
+                <ul class="for-mob">
+                    <li><a href="lapor-1.html">Lapor</a></li>
+                    <li><a href="berita.html">Berita</a></li>
+                    <li><a href="tentangkami.html">Tentang Kami</a></li>
+                    <li><a href="panduan.html">Panduan</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <ul class="pc-navbar">
+            <li><a href="lapor-1.html" class="thispage">Lapor</a></li>
+            <li><a href="berita.html">Berita</a></li>
+            <li><a href="tentangkami.html">Tentang Kami</a></li>
+            <li><a href="panduan.html">Panduan</a></li>
+        </ul>
+    </nav>
+    <div class="form">
+        <div class="form-container">
+            <h1>Mohon Isi Data Diri Berikut Ini</h1>
+            <form id="form">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap <span>*</span></label>
+                    <input type="text" id="nama" name="nama">
+                </div>
+                <div class="form-group">
+                    <label for="nik">NIK <span>*</span></label>
+                    <input type="text" id="nik" name="nik">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email <span>*</span></label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="telepon">No. Telepon <span>*</span></label>
+                    <input type="tel" id="telepon" name="telepon">
+                </div>
+                <div class="form-group">
+                    <label for="domisili">Kota Domisili <span>*</span></label>
+                    <input type="text" id="domisili" name="domisili">
+                </div>
+                <div class="form-group">
+                    <label for="alamat">Alamat <span>*</span></label>
+                    <textarea id="alamat" name="alamat"></textarea>
+                </div>
+                <div class="confirmation-group">
+                    <input type="checkbox" id="confirmation" name="confirmation">
+                    <label for="confirmation">Dengan ini, saya menyatakan bahwa data diri sudah benar</label>
+                </div>
+                <p class="log" id="error"></p>
+                <div class="navigation">
+                    <button type="button" onclick="window.location.href='lapor-1.html'" class="nav-button prev-button">&#10094;</button>
+                    <span>2 dari 4</span>
+                    <button type="button" class="nav-button next-button">&#10095;</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+    <script src="../JavaScript/laporval2.js"></script>
+    <script src="../jquery-3.7.1.min.js"></script>
+    <!-- <script src="../JavaScript/lapor.js"></script> -->
+</body>
+</html>
