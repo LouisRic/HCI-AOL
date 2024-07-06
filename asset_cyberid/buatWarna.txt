@@ -1,0 +1,6 @@
+biru:
+A3CDFF (panduan)
+0076CE (main)
+
+abu:
+D9D9D9 (lapor)

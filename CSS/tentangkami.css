@@ -1,0 +1,165 @@
+@font-face {
+    font-family: molde-semi;
+    src: url(../Fonts-Molde/molde-semi.ttf);
+}
+@font-face {
+    font-family: molde-light;
+    src: url(../Fonts-Molde/molde-light.ttf);
+}
+@font-face {
+    font-family: molde-regular;
+    src: url(../Fonts-Molde/molde-regular.ttf);
+}
+
+@media (max-width: 768px){
+    .tentangkami-content h1{
+        font-size: 1.5rem;
+    }
+   
+    .visi h1{
+        font-size: 1.5rem;
+    }
+    
+    .misi h1{
+        font-size: 1.5rem;
+    }
+
+    .misi .content div:not(.misi-number){
+        margin-right: 1.5rem;
+        font-size: 0.8rem;
+    }
+    .tentangkami-content p{
+        font-size: 0.8rem;
+    }
+    
+}
+
+.logo-large {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    margin-top: 100px;
+   
+}
+
+.logo-large img{
+    max-width: 20%;
+}
+
+.tentangkami-content {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #0076CE;
+}
+
+.tentangkami-content h1{
+    font-family: molde-semi;
+}
+
+.tentangkami-content div {
+    width: 45%;
+    border-radius: 15px;
+    background-color: #0076CE;
+    color: #fff;
+    padding: 20px;
+    font-family: molde-regular;
+}
+
+.visi {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #0076CE;
+}
+
+.visi h1{
+    font-family: molde-semi;
+}
+
+.visi .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #0076CE;
+    font-family: molde-regular;
+}
+
+.visi .content div {
+    width: 45%;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    font-size: 15px;
+    padding: 20px 0;
+}
+
+.misi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #0076CE;
+    margin: 30px 0;
+}
+
+.misi h1{
+    font-family: molde-semi;
+}
+
+.misi .content {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #0076CE;
+    color: #fff;
+    font-family: molde-regular;
+}
+
+.misi .content div {
+    max-width: 300px;
+    background: none;
+    border: none;
+}
+
+.misi .content div:not(.misi-number){
+    margin-right: 2rem;
+    width: 25%;
+}
+
+.tentangkami-content{
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+}
+
+.logo-large{
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+}
+
+.visi{
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+}
+
+.misi{
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+}
+
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+}
